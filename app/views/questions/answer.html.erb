@@ -1,7 +1,9 @@
-<h1>Your question:</h1>
-<p><%= @question %></p>
+<div class="container">
+  <h1>Your question:</h1>
+  <p class="fs-5"><%= @question %></p>
 
-<h2>Coach's answer:</h2>
-<p><%= @answer %></p>
+  <h2>Coach's answer:</h2>
+  <p class="coach-answer fs-6"><%= @answer %></p>
 
-<a href="/ask">Ask another question</a>
+  <%= link_to "Ask another question", ask_path, class: "btn btn-link" %>
+</div>
